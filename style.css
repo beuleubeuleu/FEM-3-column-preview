@@ -71,10 +71,12 @@ body {
     border: none;
     padding: 1rem;
     border-radius: 25px;
-}
-
-.card button {
     width: 50%;
+}
+.learn-more:hover {
+    outline: 2px solid #FFF;
+    background: transparent;
+    color: #FFF;
 }
 .card1 button{
     color: var(--primary-orange);
