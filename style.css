@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+:root {
+    --primary-orange: hsl(31, 77%, 52%);
+    --primary-cyan:hsl(184, 100%, 22%);
+    --primary-dark-cyan:hsl(179, 100%, 13%);
+
+    --neutra-white:hsla(0, 0%, 100%, 0.75);
+    --neutra-gray:hsl(0, 0%, 95%);
+}
+body {
+    font-size: 15px;
+    padding: 4rem 2rem;
+}
+.flex {
+    display: flex;
+}
+.grid {
+    display: grid;
+}
+
+
+.cards {
+    color: var(--neutra-white);
+    border-radius: 15px;
+}
+
+.card {
+    height: 50vh;
+    padding:2rem;
+}
+.card-content {
+    height: 34vh;
+
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.card1{
+    background: var(--primary-orange);
+    border-radius: 15px 15px 0 0;
+}
+
+.card2{
+    background: var(--primary-cyan);
+}
+
+.card3{
+    background: var(--primary-dark-cyan);
+    border-radius: 0 0 15px 15px;
+}
+
+.titre {
+    font-family: "Big Shoulders Display", sans-serif;
+}
+.text {
+    font-family: "Lexend Deca", sans-serif;
+}
+
+.learn-more {
+    border: none;
+    padding: 1rem;
+    border-radius: 25px;
+}
+
+.card button {
+    width: 50%;
+}
+.card1 button{
+    color: var(--primary-orange);
+}
+.card2 button{
+    color: var(--primary-cyan);
+}
+.card3 button{
+    color: var(--primary-dark-cyan);
+}
+
+@media screen and (min-width: 900px){
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 900px;
+        margin: auto;
+    }
+    .card {
+        height: 60vh;
+        padding:2rem;
+    }
+    .card-content {
+        height: 44vh;
+
+        justify-content: space-between;
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+
+    .card1{
+        background: var(--primary-orange);
+        border-radius: 15px 0 0 15px;
+    }
+    .card3{
+        background: var(--primary-dark-cyan);
+        border-radius: 0 15px 15px 0;
+    }
+}
+
+.attribution { font-size: 11px; text-align: center; margin-top: 1rem}
+.attribution a { color: hsl(228, 45%, 44%); }
