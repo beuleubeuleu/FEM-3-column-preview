@@ -32,16 +32,16 @@ body {
 .cards {
     color: var(--neutra-white);
     border-radius: 15px;
+    grid-template-rows: repeat(3, 500px);
 }
 
 .card {
-    height: 50vh;
     padding:2rem;
 }
 .card-content {
-    height: 34vh;
+    height: 400px;
 
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: column;
     margin-top: 2rem;
 }
@@ -86,18 +86,17 @@ body {
     color: var(--primary-dark-cyan);
 }
 
-@media screen and (min-width: 900px){
+@media screen and (min-width: 890px){
     .cards {
+        grid-template-rows: 500px;
         grid-template-columns: repeat(3, 1fr);
-        max-width: 900px;
         margin: auto;
     }
     .card {
-        height: 60vh;
         padding:2rem;
     }
     .card-content {
-        height: 44vh;
+        height: 300px;
 
         justify-content: space-between;
         flex-direction: column;
